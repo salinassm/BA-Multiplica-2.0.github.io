@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Google Fonts - p -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts - h1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts - h2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts - h3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts - h4 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts - h5 y h6 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&display=swap" rel="stylesheet">
+
+    <!-- BOOSTRAP - PARTE DE LA INSTALACION EN EL HEAD -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="img/LOGO.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas Claudia</title>
+</head>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<body>
+    <header></header>
+        <div class="encabezados">
+            <div class="encabezado-lado-izquierdo">
+                <div class="encabezado-logo-3"> <!-- LOGO LADO IZQUIERDO -->
+                    <img src="img/LOGO.png" class="LOGO">
+                </div>
+            </div>
+    
+    
+            <div class="encabezado-centro">
+                <div class="encabezado-superior">
+                    <div>
+                    <h1 class="h1">Ventas Claudia</h1>
+                </div>
+            </div>
+
+        <!--BOOTSTRAP - NAVEGACION -->
+                <div class="encabezado-buscador"> <!-- BUSCADOR. Cambie el class que anteriormente era "d-flex" -->
+                    <form class="buscador" role="search">
+                        <!-- en INPUT cambie la parte de placeholder
+                        en BUTTON cambie el type submit y class "btn btn-outline-success"-->
+                        <input class="form-control me-2" type="text" placeholder="Buscador" aria-label="Search">
+                        <button class="boton-buscador" type="submit">Click</button>
+                    </form>
+                </div>
+        </div>
+
+        <div class="encabezado-lado-derecho">
+            <div class="encabezado-usuario"> <!-- ZONA DE USUARIO -->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarScroll"> <!--  -->
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;"> <!-- BUSCADOR -->
+                            <li class="nav-item"> <!-- ACCEDER Y MODAL -->
+                                    <a class="nav-link active" role="button" aria-current="page" id="btn-abrir-modal">Acceder</a> <!-- LE AGREGUE LA ID -->
+                            </li>
+                            <li class="nav-item dropdown"> <!-- MENU DESPLEGABLE --> 
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Desplegable
+                                </a>
+                                <ul class="dropdown-menu"> 
+                                    <li><a class="dropdown-item" href="#" id="Opcion1">Últimos Lanzamientos</a></li>
+                                    <li><a class="dropdown-item" href="#" id="Opcion2">Ofertas Especiales</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#" id="Opcion3">Preguntas Frecuentes</a></li>
+                                </ul>
+                            </li>                   
+                            <li class="nav-item">
+                                <a class="nav-link" id="seccionNosotros" href="#">Nosotros</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </header>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- PARTE DE LOS DIALOG -->
+
+    <!-- SECCION: PAGINA EN PROCESO -->
+    <dialog id="mensajePaginaEnCurso" class="mensaje-pagina-en-curso">
+        <div class="borde-mensaje-pagina-en-curso">
+            <br>
+            <div class="seccion-Superior-Mensaje">
+                <div class="seccion-Superior-Mensaje-Derecho">
+                </div>
+                <div class="seccion-Superior-Mensaje-Centro">
+                    <h3>PÁGINA EN REPARACIÓN</h3>
+                </div>
+                <div class="seccion-Superior-Mensaje-Izquierdo">
+                    <button id="cerrarMensaje" class="cerrar-mensaje">CERRAR</button>
+                </div>
+            </div>
+            <br>
+            <div class="seccion-Inferior-Mensaje">
+                <img src="img/meme.gif" class="gif-pagina-en-curso">
+            </div>
+            <br>
+        </div>
+      </dialog>
+
+
+<!-- FORMULARIO ACCESO -->
+<dialog id="modal" class="formulario" >
+    <div class="formulario-superior" id="formulario-iniciar-sesion"> <!-- ID PARA JAVASCRIPT -->
+    <h3>INICIAR SESIÓN</h3>
+    <form> <br>
+        <label for="nombre">Usuario:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="apellido">Contraseña:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <input type="submit" value="Acceder">
+    </form>
+</div>
+    <br>
+
+    <div class="formulario-inferior">    
+        <button id="btn-cerrar-modal" class="boton-modal">Cerrar</button>
+        <button id="btn-cambiar-formulario-registro" class="boton-modal">Registrarse</button>
+    </div>
+</dialog>
+
+
+<!-- FORMULARIO REGISTRO -->
+<dialog id="modalRegistro" class="formulario"> 
+    <div class="formulario-superior" id="formulario-registrarse"><!-- ID PARA JAVASCRIPT -->
+        <h3>REGISTRARSE</h3>
+        <form> <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre-registro" name="nombre" required><br>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email-registro" name="email" required><br>
+    
+            <label for="Fecha de Nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required> <br>
+        
+            <label for="comentario">¿Qué deseas comprar?:</label>
+            <input type="text" id="comentario" name="comentario" required>
+        </form>
+            <br>
+            <input type="submit" value="Solicitar cuenta"><br>
+    </div>
+        <br>
+    
+        <div class="formulario-inferior">    
+            <button id="btn-cerrar-modal-registro" class="boton-modal">Cerrar</button>
+            <button id="btn-cambiar-formulario-iniciar-sesion" class="boton-modal">Acceder</button>
+        </div>
+</dialog>
+
+    
+
+
+
+<div>
+    <br>    
+    <br>
+</div>
+    
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- BOOTSTRAP - CAROUSEL -->
+
+  <div class="contenedor-cajita-imagen-inicial">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/MUJER COMPRAS.jpg" class="Imagen-Inicial" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/HOMBRE COMPRAS.jpg" class="Imagen-Inicial" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/NIÑOS COMPRAS.jpg" class="Imagen-Inicial" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<br>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- ZONA DE PRODUCTOS -->
+
+<div class="fondo-contenedor-filtro">
+    <div class="encabezado-buscador-filtro"> <!-- ESTOY RE-UTILIZANDO EL CODIGO DEL ENCABEZADO -->
+        <input class="form-control me-2" type="text" placeholder="Buscar productos" aria-label="Search">
+            <button class="boton-buscador-filtro" type="submit">Click</button>
+    </div>
+    <div class="contenedor-filtro">
+        <select>
+            <option value="TODO">Todos los productos</option>
+            <option value="Juguetes">Juguetes</option>
+            <option value="Ropa">Ropa</option>
+            <option value="Merceria">Merceria</option>
+            <option value="Mascotas">Mascotas</option>
+            <option value="Perfumes">Perfumes</option>
+        </select>
+        <select>
+            <option value="mayor-a-menor">Precio: Mayor a Menor</option>
+            <option value="menor-a-mayor">Precio: Menor a Mayor</option>
+            <option value="agregado-recientemente">Agregado Recientemente</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="fondo-contenedor">
+        <div class="contenedor">
+            <div class="contenedor-producto-venta" id="productoParaVender">
+                <img src="img/MERCERIA (Producto 1).png" alt="Producto 1">
+                <h4>220u. Perla Nacarada 6mm X 25gr</h4>
+                <p class="categoria">Merceria</p>
+                <p class="comentario">220u. Perla Nacarada 6mm X 25gr Cuentas Bijou Mostacillas</p>
+                <p class="precio">$1.111</p>
+            </div>
+        
+            <div class="contenedor-producto-venta" id="productoParaVender2">
+                <img src="img/MERCERIA (Producto 2).png" alt="Producto 2">
+                <h4>Cinta Decorativa Washi Tape</h4>
+                <p class="categoria">Merceria</p>
+                <p class="comentario">Cinta Decorativa Washi Tape - Glitter Adhesiva X 50 Unidades</p>
+                <p class="precio">$33.021</p>
+            </div>
+        
+            <div class="contenedor-producto-venta" id="productoParaVender3">
+                <img src="img/MERCERIA (Producto 3).png" alt="Producto 3">
+                <h4>Cbx Tanza Transparente Elastica</h4>
+                <p class="categoria">Merceria</p>
+                <p class="comentario">Cbx Tanza Transparente Elastica 0.60 X 100 Metros</p>
+                <p class="precio">$4.766</p>
+            </div>
+        
+            <div class="contenedor-producto-venta" id="productoParaVender4">
+                <img src="img/MERCERIA (Producto 5).png" alt="Producto 4">
+                <h5>720u Cuentas Plasticas</h5>
+                <p class="categoria">Merceria</p>
+                <p class="comentario">720u Cuentas Plasticas Letras Blancas Planas Redondas 7 Mm</p>
+                <p class="precio">$2.700</p>
+            </div>
+
+            <div class="contenedor-producto-venta" id="productoParaVender5">
+                <img src="img/MERCERIA (Producto 6).png" alt="Producto 5">
+                <h5>Alfileres x 40 Unidades</h5>
+                <p class="categoria">Merceria</p>
+                <p class="comentario">Alfileres Cabeza Perlado Marca Cbx 1 Roseta X 40 Unidades</p>
+                <p class="precio">$860</p>
+            </div>
+    </div>
+
+    <br>
+    <div class="Volver-Pagina-Anterior">
+        <button onclick="window.location.href='index.html'" class="Boton-Volver-Pagina-Anterior">Regresar</button>
+    </div>
+    
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- SECCION: AÚN NO DISPONIBLE PARA LA VENTA
+    USE EL MISMO DIALOG DE PAGINA EN REPARACIÓN -->
+    <dialog id="noVentaDisponible" class="mensaje-pagina-en-curso">
+        <div class="borde-mensaje-pagina-en-curso">
+            <br>
+            <div class="seccion-Superior-Mensaje">
+                <div class="seccion-Superior-Mensaje-Derecho">
+                </div>
+                <div class="seccion-Superior-Mensaje-Centro">
+                    <h3>AÚN NO DISPONIBLE PARA LA VENTA</h3>
+                </div>
+                <div class="seccion-Superior-Mensaje-Izquierdo">
+                    <button id="cerrarMensajeVenta" class="cerrar-mensaje">CERRAR</button>
+                </div>
+            </div>
+            <br>
+            <div class="seccion-Inferior-Mensaje">
+                <img src="img/DIALOG - Producto No Disponible.gif" class="gif-pagina-en-curso">
+            </div>
+            <br>
+        </div>
+      </dialog>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- BOOTSTRAP - PARTE DE LA INSTACION EN EL BODY -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- JAVASCRIP -->
+    <script src="main.js"></script>
+
+    
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- PIE DE PAGINA -->
+
+<footer>
+    <div class="pie-de-pagina">
+    <div class="datos-superior">
+        <div class="datos-mapa">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.845995810436!2d-58.37027779999999!3d-34.6080556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses!2sar!4v1699894931612!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="datos-vendedor">
+            <div class="texto">
+                <h5>Claudia Cruz</h5>
+                <p>(+54) 9 11 2222-2222</p>
+                <p>Calle Falsa 123</p>
+                <p>Quilmes, Bs.As.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="datos-mios">
+        <h6>Creado por Milagros Salinas</h6> 
+    </div>
+    </div>
+    
+</footer>
+
+</body>
+
+
+</html>
